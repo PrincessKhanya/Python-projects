@@ -2,6 +2,7 @@ import random
 
 def guess(x):
     random_number=random.randint(1,x)
+
     guess=0
 
     while guess!= random_number:
@@ -12,7 +13,7 @@ def guess(x):
             print("Sorry, guess again. Too high")
     print(f"Yay, congrat. You have guessed the number {random_number } corretly")
 
-guess(10)
+guess(int(input("What range would you like to guess from starting from 1 :")))
 
 
 
